@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - OPTR Gaming</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="teams.html">Teams</a>
+        <a href="login.html">Login</a>
+        <a href="applications.html">Applications</a>
+      </nav>
+    </div>
+    <hr>
+  </header>
+  <main>
+    <section class="login">
+      <h1>Login</h1>
+      <form id="login-form">
+        <label for="email">Email:</label>
+        <input type="email" id="login-email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="login-password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <hr class="footer-hr">
+      <p>&copy; 2024 OPTR Gaming. All rights reserved.</p>
+      <nav>
+        <a href="feedback.html">Feedback</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+  <script type="module" src="src/firebaseConfig.js"></script>
+  <script type="module" src="src/index.js"></script>
+</body>
+</html>

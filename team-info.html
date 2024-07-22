@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Info - OPTR Gaming</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="team-info.html">Team Info</a>
+        <a href="login.html">Login</a>
+        <a href="applications.html">Applications</a>
+      </nav>
+    </div>
+    <hr>
+  </header>
+  <main>
+    <div class="content-wrapper">
+      <aside class="sidebar">
+        <button onclick="showSection('ladder')">Ladder</button>
+        <button onclick="showSection('division-info')">Division Information</button>
+        <button onclick="showSection('player-profiles')">Player Profiles</button>
+      </aside>
+      <section id="ladder" class="content-section">
+        <h2>Ladder</h2>
+      </section>
+      <section id="division-info" class="content-section" style="display:none;">
+        <h2>Division Information</h2>
+      </section>
+      <section id="player-profiles" class="content-section" style="display:none;">
+        <h2>Player Profiles</h2>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <hr class="footer-hr">
+      <p>&copy; 2024 OPTR Gaming. All rights reserved.</p>
+      <nav>
+        <a href="feedback.html">Feedback</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="assets/scripts/ladder.js"></script>
+  <script src="assets/scripts/divisions.js"></script>
+  <script src="assets/scripts/players.js"></script>
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
