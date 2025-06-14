@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -24,7 +24,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'firebaseConfig': path.resolve(__dirname, 'src/firebaseConfig.js')
-    }
+      firebaseConfig: path.resolve(__dirname, 'firebaseConfig.js'),
+    },
   },
 };

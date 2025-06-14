@@ -126,6 +126,19 @@ describe("deploy", () => {
       expect(deployFlags).toContain("--only");
       expect(deployFlags).toContain("my-second-site");
     });
+
+    it("passes the project flag when projectId is set", async () => {
+      // @ts-ignore read-only property
+      exec.exec = jest.fn(fakeExec);
+
+      await deployPreview("my-file", baseChannelDeployConfig);
+
+      // @ts-ignore Jest adds a magic "mock" property
+      const args = exec.exec.mock.calls;
+      const deployFlags = args[0][1];
+      expect(deployFlags).toContain("--project");
+      expect(deployFlags).toContain(baseChannelDeployConfig.projectId);
+    });
   });
 
   describe("deploy to live channel", () => {
