@@ -12,12 +12,16 @@
   "author": "NoTolerated",
   "license": "ISC",
   "dependencies": {
+    "crypto-browserify": "^3.12.1",
     "dotenv": "^16.4.5",
     "dotenv-webpack": "^8.1.0",
     "express": "^4.19.2",
     "firebase": "^10.12.4",
     "firebase-admin": "^12.2.0",
-    "morgan": "^1.10.0"
+    "firebaseui": "^6.1.0",
+    "morgan": "^1.10.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
