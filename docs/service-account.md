@@ -1,6 +1,6 @@
 # Setting up the service account
 
-This action requires a service account to authenticate with Firebase Hosting. The easiest way to set up the service account is to use the Firebase CLI with the `firebase init hosting:github`. If that doesn't work for you, you can configure it manually.
+This action requires a service account to authenticate with Firebase Hosting. The easiest way to set up the service account is to use the Firebase CLI with the `firebase init hosting:github` command. If that doesn't work for you, you can configure it manually.
 
 ## Manually configure the service account
 

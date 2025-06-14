@@ -1,4 +1,4 @@
-// src/index.js
+// Main site script
 
 /* eslint-env browser */
 import { initializeApp } from "firebase/app";

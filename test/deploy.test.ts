@@ -139,6 +139,20 @@ describe("deploy", () => {
       expect(deployFlags).toContain("--project");
       expect(deployFlags).toContain(baseChannelDeployConfig.projectId);
     });
+
+    it("omits the project flag when projectId is undefined", async () => {
+      // @ts-ignore read-only property
+      exec.exec = jest.fn(fakeExec);
+
+      const config = { ...baseChannelDeployConfig, projectId: undefined };
+
+      await deployPreview("my-file", config as ChannelDeployConfig);
+
+      // @ts-ignore Jest adds a magic "mock" property
+      const args = exec.exec.mock.calls;
+      const deployFlags = args[0][1];
+      expect(deployFlags).not.toContain("--project");
+    });
   });
 
   describe("deploy to live channel", () => {

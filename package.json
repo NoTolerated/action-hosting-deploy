@@ -2,7 +2,7 @@
   "name": "website",
   "version": "1.0.0",
   "description": "Your project description",
-  "main": "website/index.html",
+  "main": "index.html",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "parcel index.html",
