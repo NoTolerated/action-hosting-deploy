@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.config.js",
     "start": "parcel src/index.html",
     "test": "echo \"No tests configured\" && exit 0",
-    "lint": "eslint ."
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint -c .eslintrc.js ."
   },
   "author": "NoTolerated",
   "license": "ISC",
@@ -38,5 +38,6 @@
   },
   "engines": {
     "node": "18.x"
-  }
+  },
+  "engineStrict": true
 }
