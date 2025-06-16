@@ -2,12 +2,13 @@
   "name": "website",
   "version": "1.0.0",
   "description": "Your project description",
+  "type": "module",
   "main": "website/index.html",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "parcel src/index.html",
     "test": "echo \"No tests configured\" && exit 0",
-    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint -c .eslintrc.js ."
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint -c .eslintrc.cjs ."
   },
   "author": "NoTolerated",
   "license": "ISC",
