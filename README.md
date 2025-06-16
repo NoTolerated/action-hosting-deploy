@@ -57,7 +57,7 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           expires: 30d
-          projectId: your-Firebase-project-ID
+          projectId: optr-31f2a
 ```
 
 ### Deploy to your live channel on merge
@@ -85,7 +85,7 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
-          projectId: your-Firebase-project-ID
+          projectId: optr-31f2a
           channelId: live
 ```
 
