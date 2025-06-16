@@ -24,6 +24,12 @@ firebase init hosting
 firebase init hosting:github
 ```
 
+### Requirements
+
+This project expects **Node.js 18** for local development and CI. The `package.json` enforces this via the `engines` field and `.nvmrc` specifies the version for `nvm` users. Ensure you install dependencies with Node 18 to avoid engine mismatches.
+
+Your environment variables should be stored in a `.env` file. The repository's `.gitignore` already excludes `.env` so secrets remain private.
+
 ## Usage
 
 ### Deploy to a new preview channel for every PR
