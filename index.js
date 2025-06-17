@@ -5,7 +5,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, EmailAuthProvider } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
 import * as firebaseui from 'firebaseui';
-import firebaseConfig from "./firebaseConfig";
+import firebaseConfig from "./src/firebaseConfig.js";
 
 // Initialize Firebase app and services
 const app = initializeApp(firebaseConfig);

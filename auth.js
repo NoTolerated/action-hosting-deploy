@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-import firebaseConfig from './firebaseConfig';
+import firebaseConfig from './src/firebaseConfig.js';
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
