@@ -28,14 +28,14 @@
     ]
   },
   "database": {
-    "rules": "src/database.rules.json"
+    "rules": "database.rules.json"
   },
   "firestore": {
-    "rules": "src/firestore.rules",
-    "indexes": "src/firestore.indexes.json"
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
   },
   "storage": {
-    "rules": "src/storage.rules"
+    "rules": "storage.rules"
   },
   "emulators": {
     "auth": {
