@@ -10,7 +10,7 @@
       "*.local"
     ],
     "predeploy": [
-      "npx --prefix src eslint ."
+      "ESLINT_USE_FLAT_CONFIG=false npx eslint -c .eslintrc.cjs ."
     ]
   },
   "hosting": {
