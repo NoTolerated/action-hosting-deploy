@@ -1,6 +1,10 @@
+// eslint.config.js
 import js from "@eslint/js";
 
+/** @type {import("eslint").FlatConfigItem[]} */
 export default [
+  // Use ESLint's recommended configuration
   js.configs.recommended,
-  // Add any additional configurations or custom rules here
+  // Additional flat config settings can go here
 ];
+
